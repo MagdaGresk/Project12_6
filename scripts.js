@@ -6,7 +6,7 @@ var cauntriesLanguage = $('#languages[0].name')
 var cauntriesCurrencies = $('#currencies[0].name')
 
 function searchCountries() {
- 	var countryName = $('#country-name').val()
+  var countryName = $('#country-name').val()
   if(!countryName.length) countryName = 'Poland'
   $.ajax({
   		url: url + countryName,
