@@ -7,8 +7,8 @@ var cauntriesCurrencies = $('#currencies[0].name')
 
 function searchCountries() {
  	var countryName = $('#country-name').val()
-if(!countryName.length) countryName = 'Poland'
-$.ajax({
+  if(!countryName.length) countryName = 'Poland'
+  $.ajax({
   		url: url + countryName,
   		method: 'GET',
   		success: showCountriesList
